@@ -1,0 +1,8 @@
+config.json
+log.txt
+*.log
+*.pem
+.env
+.env.*
+__pycache__/
+.vscode/
