@@ -1,0 +1,60 @@
+Goal
+- create boilerplate project with backend, frontend, db
+- setup in server
+- make it easy to run locally (set up dev environment)
+- setup pipeline
+
+STEPS
+- project local setup
+  - folder structure
+  - .gitignore
+  - docker-compose
+  - empty readme
+
+- frontend setup
+  - new react app with sh
+  - copy Dockerfile
+
+- backend setup
+  - extract zip
+  - copy Dockerfile
+  - application.properties
+
+- db setup
+  - tel user to confirm 'y' that local and remote db servers are running
+  - create db on local server
+  - create db on remote server
+
+- setup nginx
+  - get nginx file on docker on server
+  - add routes for frontend and backend
+  - reload nginx
+
+- env files
+  - create in local folder (will be git/docker ignored)
+    - (db already exists)
+    - backend
+    - frontend (do later)
+  - on server
+
+- github setup
+  - create repository
+
+- setup dev environment:
+  - application.properties/.env
+  - localbuild.sh?
+
+- docker ignore
+  - create
+  - push
+
+- pipeline
+  - create push
+
+Notes
+- ignore env files where necessary (dockerhub, git)
+- docker hub setup not necessary, will do it automatically through pipeline
+- not necessary to copy .env files with gh actions. just place them where they should be beforehand
+- set href when building frontend
+- change container name to be project specific, not just "frontend"/"backend"
+- make sure pipeline doesnt stop/remove docker resources of other apps

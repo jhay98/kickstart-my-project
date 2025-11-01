@@ -1,0 +1,7 @@
+location /{project-name}/ {
+    proxy_pass http://{project-name}-frontend:80/;
+  }
+
+  location /{project-name}/api/ {
+    proxy_pass http://{project-name}-backend:8080/api/;
+  }
